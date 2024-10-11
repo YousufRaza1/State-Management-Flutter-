@@ -1,6 +1,8 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'CounterInheritedWidget.dart';
+import 'example_change_notifier.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: InheritedNotifierExample(),
     );
   }
 }
