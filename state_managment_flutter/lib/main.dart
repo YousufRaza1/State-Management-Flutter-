@@ -3,9 +3,12 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'CounterInheritedWidget.dart';
 import 'example_change_notifier.dart';
+import 'state_management_using_provider/View/counter_main_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+      const MyApp()
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: InheritedNotifierExample(),
+      home: CounterMainScreen(),
     );
   }
 }
